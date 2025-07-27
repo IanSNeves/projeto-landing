@@ -1,0 +1,25 @@
+@use 'variables';
+
+.btn {
+    display: inline-block;
+    padding: 12px 28px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+
+    &--primary {
+        background-color: variables.$color-primary;
+        color: variables.$color-text;
+
+        &:hover {
+            background-color: darken(variables.$color-primary, 10%);
+        }
+    }
+
+}
+
