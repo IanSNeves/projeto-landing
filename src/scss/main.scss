@@ -4,6 +4,7 @@
 @use 'partials/hero';
 @use 'partials/cast';
 @use 'partials/platforms';
+@use 'partials/faq';
 
 body {
     background-color: $color-background;
