@@ -1,0 +1,29 @@
+@use 'partials/variables' as *;
+
+.platforms {
+    padding: 60px 0;
+    background-color: lighten($color-background, 5%);
+    
+    &__grid {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+        flex-wrap: wrap;
+        margin-top: 40px;
+    }
+    
+}
+
+.platform-logo {
+    img{
+        height: 50px;
+        width: auto;
+        filter: grayscale(100%) brightness(1.8);
+        transition: filter 0.3s ease;
+
+        &:hover {
+            filter: grayscale(0%) brightness(1);
+        }
+    }
+}
