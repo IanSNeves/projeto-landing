@@ -168,6 +168,53 @@
   filter: grayscale(0%) brightness(1);
 }
 
+.faq {
+  padding: 60px 0;
+}
+.faq__list {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+details {
+  background-color: rgb(29.75, 29.75, 29.75);
+  padding: 8px;
+  border: 1px solid rgb(55.25, 55.25, 55.25);
+  border-radius: 4px;
+}
+details summary {
+  padding: 20px;
+  font-size: 1.25rem;
+  cursor: pointer;
+  list-style: none;
+  position: relative;
+}
+details summary::after {
+  content: "+";
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.5rem;
+  transition: transform 0.3s ease;
+}
+details p {
+  padding: 0 20px 20px 20px;
+  margin: 0;
+  color: #c2c2c2;
+  line-height: 1.6;
+}
+
+details[open] summary {
+  color: #E50914;
+}
+details[open] summary::after {
+  transform: translateY(-50%) rotate(45deg);
+}
+
 body {
   background-color: #111111;
   color: #F5F5F5;
